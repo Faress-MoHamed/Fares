@@ -95,8 +95,8 @@ function Experience() {
                   introduced to various aspects of front-end development and the
                   opportunities it offers.
                 </p>
-                <div className="my-5 p-3 shadow-2xl">
-                  <img src="./Me/family.jpg" width={725} alt="" />
+                <div className="my-5 p-3 shadow-2xl md:w-[725px] w-full">
+                  <img src="./Me/family.jpg" alt="" />
                 </div>
               </p>
             </div>
