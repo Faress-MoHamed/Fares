@@ -14,7 +14,7 @@ function Home() {
       <NavBar />
       <section
         id="#home"
-        className=" bg-no-repeat bg-cover bg-[url('./wave/blob-scene-haikei.svg')] h-screen flex items-center justify-center space-y-12"
+        className=" bg-no-repeat bg-cover bg-[url('/wave/blob-scene-haikei.svg')] h-screen flex items-center justify-center space-y-12"
       >
         <div className="mt-20">
           <div className="max-h-fit xl:px-[30px] px-5 xl:pr-[121px] my-12 xl:py-[50px] py-8 xl:rounded-2xl bg-white/50  backdrop-blur-[12px] ">
