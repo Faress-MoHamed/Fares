@@ -100,7 +100,7 @@ const Work = () => {
       <Header>Examples of My Work</Header>
       <div className="flex justify-center bg-neutral-300 py-4 rounded-full mb-10">
         <ul
-          className=" w-2/4 flex md:justify-between
+          className=" w-2/4 flex md:gap-0 gap-4 md:justify-between
         justify-center items-center"
         >
           {categories.map((el) => (
@@ -111,7 +111,7 @@ const Work = () => {
                   handleCategoryChange(el);
                 }}
                 className={` md:text-xl text-md font-bold hover:bg-slate-200 
-              hover:text-cyan-700 md:w-[126px] md:h-12 w-[100px] h-[45px]  rounded-lg transition-colors duration-300 ${selectedCategory === el ? "text-cyan-700 bg-slate-200" : "text-neutral-800"}`}
+              hover:text-cyan-700 md:w-[126px] md:h-12 w-[80px] h-[45px]  rounded-lg transition-colors duration-300 ${selectedCategory === el ? "text-cyan-700 bg-slate-200" : "text-neutral-800"}`}
               >
                 {el}
               </button>
