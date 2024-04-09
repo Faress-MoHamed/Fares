@@ -98,7 +98,7 @@ const Work = () => {
       className="container mx-auto max-w-7xl py-36 overflow-hidden"
     >
       <Header>Examples of My Work</Header>
-      <div className="flex justify-center bg-neutral-300 py-4 rounded-full mb-10">
+      <div className="flex justify-center bg-neutral-300 md:py-4 py-2 rounded-full mb-10">
         <ul
           className=" w-2/4 flex md:gap-0 gap-4 md:justify-between
         justify-center items-center"
