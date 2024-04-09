@@ -136,7 +136,7 @@ function NavBar() {
                   duration={500}
                   delay={500}
                   isDynamic={true}
-                  href={`#${item.link}`}
+                  to={`#${item.link}`}
                   className="cursor-pointer"
                   onClick={() => {
                     handleActiveLink(item.name);
@@ -209,7 +209,7 @@ function NavBar() {
                           duration={500}
                           delay={500}
                           isDynamic={true}
-                          href={`#${item.link}`}
+                          to={`#${item.link}`}
                           onClick={() => handleActiveLink(item.name)}
                           className="cursor-pointer"
                         >
