@@ -31,9 +31,9 @@ function Track() {
         type: "spring",
       }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="py-10 shadow-2xl overflow-hidden xl:py-10 md:py-8  xl:px-8 md:px-6 px-5 rounded-[20px] backdrop-blur-lg flex flex-col gap-4"
+      className="bg-white py-10 shadow-2xl overflow-hidden xl:py-10 md:py-8  xl:px-8 md:px-6 px-5 rounded-[20px] backdrop-blur-lg flex flex-col gap-4"
     >
-      <h2 className="text-cyan-700 text-3xl font-bold">My recent track</h2>
+      <h2 className="text-primary-700 text-3xl font-bold">My recent track</h2>
       <ul className="flex justify-center flex-wrap gap-7 my-4">
         {track.map((el) => (
           <li
@@ -51,7 +51,7 @@ function Track() {
                 ease: "easeIn",
               }}
               whileInView={{ opacity: 1, y: 0 }}
-              className={`${hover && item === el.name ? "block" : "hidden"} shadow-small rounded-full px-2 opacity-0 absolute top-[-38px] bg-cyan-950 text-white p-1`}
+              className={`${hover && item === el.name ? "block" : "hidden"} shadow-small rounded-full px-2 opacity-0 absolute top-[-38px] bg-primary-950 text-white p-1`}
             >
               {el.name}
             </motion.p>

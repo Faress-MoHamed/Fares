@@ -45,7 +45,7 @@ function Form() {
         </label>
         <textarea
           aria-label="text area"
-          className="outline-none p-2 border-gray-950 border-[2px] rounded-md bg-zinc-100 placeholder:text-xl"
+          className="outline-none p-2 border-gray-950 border-[2px] rounded-md bg-primary-50 placeholder:text-xl"
           name="message"
           cols={50}
           rows={10}
@@ -54,7 +54,7 @@ function Form() {
           <button
             aria-label="submit"
             type="submit"
-            className=" bg-cyan-900 w-36 h-12 rounded-full text-lg hover:text-white font-bold hover:scale-110 text-neutral-300 transition-all duration-300"
+            className=" bg-primary-900 w-36 h-12 rounded-full text-lg hover:text-white font-bold hover:scale-110 text-neutral-300 transition-all duration-300"
           >
             Submit
           </button>

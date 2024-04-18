@@ -52,7 +52,7 @@ function Icons({ dispatch }) {
                 ease: "easeIn",
               }}
               whileInView={{ opacity: 1, y: 0 }}
-              className={`${hover && item === el.name ? "block" : "hidden"} shadow-small rounded-full px-2 opacity-0 absolute top-[-38px] bg-cyan-950 text-white p-1`}
+              className={`${hover && item === el.name ? "block" : "hidden"} shadow-small rounded-full px-2 opacity-0 absolute top-[-38px] bg-primary-950 text-white p-1`}
             >
               {el.name}
             </motion.p>

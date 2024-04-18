@@ -71,7 +71,7 @@ function BobUpIcons({ dispatch, clicked }) {
               className="absolute right-3 top-3 z-20"
               onClick={() => dispatch({ type: "close" })}
             >
-              <i className="fa-regular fa-circle-xmark text-2xl text-cyan-600 hover:text-cyan-900 transition-colors duration-300"></i>
+              <i className="fa-regular fa-circle-xmark text-2xl text-primary-600 hover:text-primary-900 transition-colors duration-300"></i>
             </motion.button>
             <header className="text-lg mb-7">My Skills</header>
             <ul

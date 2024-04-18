@@ -12,12 +12,16 @@
   }
 }
 
+#root{
+  background-color: #e7e5e4;
+}
+
 ::-webkit-scrollbar {
-  color: aqua;
+  color: #e7e5e4;
   width: 4px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #2fa4fd;
+  background-color: #44403c;
 }
 /* @font-face {
   font-family: "MyFont";

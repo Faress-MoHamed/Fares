@@ -41,7 +41,7 @@ useEffect(() => {
           className="absolute right-3 top-3 z-20"
           onClick={handleClose}
         >
-          <i className="fa-regular fa-circle-xmark text-2xl text-cyan-600 hover:text-cyan-900 transition-colors duration-300"></i>
+          <i className="fa-regular fa-circle-xmark text-2xl text-primary-600 hover:text-primary-900 transition-colors duration-300"></i>
         </motion.button>
         <div className="w-2/4 hidden lg:block">
           <img
@@ -52,7 +52,7 @@ useEffect(() => {
         </div>
         <div className="lg:w-2/4 w-full backdrop-blur-md backdrop-saturate-150 pt-[1rem] py-10 p-8">
           <div className="drop-shadow-sm bg-transparent">
-            <h3 className="text-4xl font-bold text-cyan-700 py-4 ">My Story</h3>
+            <h3 className="text-4xl font-bold text-primary-700 py-4 ">My Story</h3>
           </div>
           <div className="overflow-y-auto h-[500px]">
             <div className="pr-2">

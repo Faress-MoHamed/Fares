@@ -24,7 +24,7 @@ function Experience() {
             <a
               href="https://www.upwork.com/freelancers/~012d0d83636f48808e"
               target="_blank"
-              className="text-cyan-600"
+              className="text-primary-600"
               rel="noreferrer"
             >
               @Freelancer
@@ -76,7 +76,7 @@ function Experience() {
             <a
               href="https://developers.google.com/community/gdsc"
               target="_blank"
-              className="text-cyan-600"
+              className="text-primary-600"
               rel="noreferrer"
             >
               @GDSC
@@ -84,7 +84,7 @@ function Experience() {
           </h4>
           <p className="text-gray-400">sep 2023 to mar 2024</p>
           <div>
-            <div className="flex justify-center">
+            <div className="flex  justify-center">
               <p className="text-md w-[80%] my-5">
                 <p>
                   My journey with GDSC (Google Developer Student Clubs) as a
@@ -95,8 +95,8 @@ function Experience() {
                   introduced to various aspects of front-end development and the
                   opportunities it offers.
                 </p>
-                <div className="hidden md:block my-5 p-3 shadow-2xl md:w-[725px] w-full">
-                  <img src="./Me/family.jpg" alt="" />
+                <div className="hidden md:block my-5 p-3 shadow-2xl lg:w-[725px]">
+                  <img src="./Me/family.jpg" alt="family" className="lg:max-w-full" />
                 </div>
               </p>
             </div>

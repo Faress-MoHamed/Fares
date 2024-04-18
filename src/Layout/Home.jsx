@@ -29,7 +29,7 @@ function Home() {
               }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-sky-800 text-lg font-bold font-azeretMono pl-1 sm:tracking-[2px]"
+              className="text-primary-200 text-lg font-bold font-azeretMono pl-1 sm:tracking-[2px]"
             >
               Hi, My Name is
             </motion.h1>
@@ -48,7 +48,7 @@ function Home() {
             >
               {Data.name}
               <br />
-              <span className="text-sky-700 font-madeEvolveSans ">
+              <span className="text-primary-200 ">
                 {Data.title}
               </span>
             </motion.h5>
@@ -81,7 +81,7 @@ function Home() {
               className="flex gap-[30px] rounded-xl items-center"
             >
               <Link
-                className={`font-Josefin-Sans w-full sm:w-auto main-button !px-4 !py-2 text-center  !border-4  border-sky-600 text-sky-600 !rounded-lg font-medium xl:text-xl text-lg cursor-pointer hover:bg-sky-600 hover:border-transparent hover:text-sky-50 transition-all duration-300`}
+                className={`font-Josefin-Sans w-full sm:w-auto main-button !px-4 !py-2 text-center  !border-4  border-primary-600 text-primary-600 !rounded-lg font-medium xl:text-xl text-lg cursor-pointer hover:bg-primary-600 hover:border-transparent hover:text-sky-50 transition-all duration-300`}
                 href={"#work"}
                 spy={true}
                 smooth={true}

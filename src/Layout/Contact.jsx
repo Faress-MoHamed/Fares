@@ -10,7 +10,7 @@ function Contact() {
       <Header>Keep In Touch</Header>
       <div className="flex flex-col md:flex-row items-start gap-20 md:p-0 p-9">
         <div className="md:w-2/5 w-full flex flex-col justify-center gap-5">
-          <h2 className="relative w-fit text-xl  font-bold text-cyan-700 before:absolute before:w-full before:bottom-[-5px] before:left-0 before:h-[2px] before:bg-cyan-700">
+          <h2 className="relative w-fit text-xl  font-bold text-primary-700 before:absolute before:w-full before:bottom-[-5px] before:left-0 before:h-[2px] before:bg-primary-700">
             Let`s contact and don`t waste any time
           </h2>
           <p className="font-semibold">
@@ -22,14 +22,14 @@ function Contact() {
             className="flex items-center gap-3 text-lg font-semibold"
             href="tel:+201144545347"
           >
-            <i class="fa-solid fa-phone text-cyan-700"></i>
+            <i className="fa-solid fa-phone text-primary-700"></i>
             <p>+201144545347</p>
           </a>
           <a
             className="flex items-center gap-3 text-lg font-semibold"
             href="mailto:fareess.mohameedd@gmail.com"
           >
-            <i class="fa-solid fa-envelope text-cyan-700"></i>
+            <i className="fa-solid fa-envelope text-primary-700"></i>
             <p>fareess.mohameedd@gmail.com</p>
           </a>
         </div>

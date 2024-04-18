@@ -111,7 +111,7 @@ function NavBar() {
   return (
     <>
       <nav className="container fixed left-1/2 top-0  z-30  mx-auto flex  -translate-x-1/2 items-center justify-between bg-white/40 px-6 py-4 backdrop-blur-lg transition-all lg:top-5 lg:rounded-2xl ">
-        <h2 className=" cursor-pointer  font-[Rakkas] md:text-5xl text-3xl font-bold text-stone-900 transition-colors duration-300">
+        <h2 className=" cursor-pointer  font-logo md:text-5xl uppercase text-3xl font-bold text-stone-900 transition-colors duration-300">
           Fares
         </h2>
         <ul className="hidden items-center justify-between lg:flex  lg:gap-4 xl:w-2/5">
@@ -157,7 +157,7 @@ function NavBar() {
           delay={500}
           isDynamic={true}
           href="./Me/cv.pdf"
-          className="hidden w-32 cursor-pointer rounded-xl bg-cyan-800 py-2 text-center text-white outline-none lg:block"
+          className="hidden w-32 cursor-pointer rounded-xl bg-primary-800 py-2 text-center text-white outline-none lg:block"
         >
           Resume
         </motion.a>
@@ -180,10 +180,10 @@ function NavBar() {
               transition={{ duration: 0.5 }}
               className={`fixed ${open ? "" : "hidden"} right-0 top-0 z-[99999] w-2/5 lg:top-5`}
             >
-              <ul className="flex  h-screen w-full flex-col items-start justify-start gap-5 bg-blue-400 p-3 backdrop-blur-lg lg:hidden">
+              <ul className="flex  h-screen w-full flex-col items-start justify-start gap-5 bg-primary-200 p-3 backdrop-blur-lg lg:hidden">
                 <button
                   aria-label="clos sidebar"
-                  className="text-4xl text-cyan-900"
+                  className="text-4xl text-primary-900"
                   onClick={() => handleClose()}
                 >
                   <i className="fa-solid fa-xmark"></i>
@@ -192,7 +192,7 @@ function NavBar() {
                   return (
                     <>
                       <motion.li
-                        initial={{ opacity: 0, x: -100 }}
+                        initial={{ opacity: 0, x: 100 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{
                           delay: 0.2 * item.id,
