@@ -4,20 +4,19 @@ import Contact from "./Layout/Contact";
 import Experience from "./Layout/Experience";
 import Home from "./Layout/Home";
 import Work from "./Layout/Work";
-import { useEffect, useState } from "react";
-
+import { MobileHandlerProvider } from "./MobileHandler";
 function App() {
   return (
     <>
       {
-        <>
+        <MobileHandlerProvider>
           <LeftSocial />
           <Home />
           <AboutMe />
           <Experience />
           <Work />
           <Contact />
-        </>
+        </MobileHandlerProvider>
       }
     </>
   );

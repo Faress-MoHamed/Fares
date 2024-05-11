@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { MobileHandlerContext } from "../MobileHandler";
 
-function DescriptionMe({handleClick}) {
-    const [hover, setHover] = useState(false);
+function DescriptionMe({ handleClick }) {
+  const [hover, setHover] = useState(false);
+  const { isMobile } = useContext(MobileHandlerContext);
   function handleHover() {
     setHover((e) => !e);
   }
@@ -28,7 +30,7 @@ function DescriptionMe({handleClick}) {
       </p>
       <p
         onClick={handleClick}
-        className={`${hover ? "bottom-6 md:bottom-5" : "bottom-[-125px]"} absolute right-10 cursor-pointer overflow-hidden  font-semibold text-primary-600 transition-all duration-200 hover:block`}
+        className={`${hover & !isMobile ? "bottom-6 md:bottom-5" : "bottom-3 md:bottom-[-125px]"} absolute right-10 cursor-pointer overflow-hidden font-semibold text-primary-600 transition-all duration-200 hover:block`}
       >
         Show more
       </p>
@@ -36,4 +38,4 @@ function DescriptionMe({handleClick}) {
   );
 }
 
-export default DescriptionMe
+export default DescriptionMe;
