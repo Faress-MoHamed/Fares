@@ -66,7 +66,7 @@ useEffect(() => {
                 school. As I delved deeper, I devoured everything from CSS to
                 JavaScript, joining online communities and contributing to
                 open-source projects. Each line of code wasn't just learning; it
-                was a step towards mastering the art of front-end development.{" "}
+                was a step towards mastering the art of front-end development.
                 <br />
                 Over the years, my toolkit has expanded from basic HTML and CSS
                 to sophisticated frameworks like React and Next.js. I specialize
