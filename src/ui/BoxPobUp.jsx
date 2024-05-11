@@ -69,7 +69,7 @@ useEffect(() => {
                 was a step towards mastering the art of front-end development.{" "}
                 <br />
                 Over the years, my toolkit has expanded from basic HTML and CSS
-                to sophisticated frameworks like React and Vue.js. I specialize
+                to sophisticated frameworks like React and Next.js. I specialize
                 in translating high-fidelity designs into pixel-perfect,
                 responsive, and accessible web interfaces.
                 <br />
