@@ -156,7 +156,7 @@ function NavBar() {
           duration={500}
           delay={500}
           isDynamic={true}
-          href="./Me/cv.pdf"
+          href="./Me/fares_mohamed_ahmed.pdf"
           className="hidden w-32 cursor-pointer rounded-xl bg-primary-800 py-2 text-center text-white outline-none lg:block"
         >
           Resume
