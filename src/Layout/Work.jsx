@@ -37,7 +37,7 @@ const data = [
   },
   {
     id: 5,
-    category: "js",
+    category: "JavaScript",
     title: "MultiStep Form",
     repo: "https://github.com/Faress-MoHamed/Multi-stepform",
     live: "https://faress-mohamed.github.io/Multi-stepform/",
@@ -61,14 +61,14 @@ const data = [
   },
   {
     id: 8,
-    category: "js",
+    category: "JavaScript",
     title: "newsletter sign up with",
     repo: "https://github.com/Faress-MoHamed/newsletter-sign-up-with-success-message-main",
     live: "https://faress-mohamed.github.io/newsletter-sign-up-with-success-message-main/index.html",
     imgPath: "./Projects/newsletter.png",
   },
 ];
-const categories = ["All", "responsive", "js", "Reactjs"];
+const categories = ["All", "responsive", "JavaScript", "Reactjs"];
 const Work = () => {
   // const [Active, SetActive] = useState("All");
   const [seeMore, setSeeMore] = useState(false);
@@ -83,31 +83,29 @@ const Work = () => {
     selectedCategory === "All"
       ? data
       : data.filter((item) => item.category === selectedCategory);
-  console.log(filteredData.slice(0, 6).map((el) => el));
   return (
     <section
       id="#work"
-      className="container mx-auto max-w-7xl py-36 overflow-hidden"
+      className="container mx-auto px-3 max-w-7xl py-36 overflow-hidden"
     >
       <Header>Examples of My Work</Header>
       <div className="flex justify-center w-full items-center">
-        <div className=" h-12 flex w-2/4 justify-center bg-white  py-0 rounded-full mb-10">
-          <ul
-            className=" px-7 w-full flex md:gap-0 gap-4 md:justify-between
-        justify-center items-center"
-          >
+        <div
+          className={`h-12 flex md:w-2/4 justify-center pl-2 rounded-full mb-10`}
+        >
+          <ul className="bg-white py-7 px-4 w-full flex md:gap-0 gap-4 rounded-full justify-between items-center">
             {categories.map((el, index) => (
-              <li key={index}>
-                <button
-                  aria-label="select category"
-                  onClick={() => {
-                    handleCategoryChange(el);
-                  }}
-                  className={`capitalize font-semibold hover:bg-slate-200 
-              hover:text-primary-700 py-2 md:px-6 px-2  rounded-full transition-colors duration-300 ${selectedCategory === el ? "text-primary-700 bg-slate-200" : "text-neutral-800"}`}
-                >
-                  {el}
-                </button>
+              <li
+                aria-label="select category"
+                role="button"
+                onClick={() => {
+                  handleCategoryChange(el);
+                }}
+                className={`min-w-[100px] text-center capitalize font-semibold hover:bg-slate-200 
+              hover:text-primary-700 p-2 w-[${100 / categories.length}%] rounded-full transition-colors duration-300 ${selectedCategory === el ? "text-primary-700 bg-slate-200" : "text-neutral-800"}`}
+                key={index}
+              >
+                {el}
               </li>
             ))}
           </ul>

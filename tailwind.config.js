@@ -10,7 +10,7 @@ export default {
       },
       fontFamily: {
         "Josefin-Sans": ['"Josefin Sans"', "sans-serif"],
-        "logo": ['"Jersey 20"', "sans-serif"],
+        logo: ['"Jersey 20"', "sans-serif"],
       },
       colors: {
         primary: {

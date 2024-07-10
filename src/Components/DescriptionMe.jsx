@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
-import { MobileHandlerContext } from "../MobileHandler";
+import { MobileHandlerContext } from "../utils/MobileHandlerProvider";
+import { FaCheck } from "react-icons/fa";
 
 function DescriptionMe({ handleClick }) {
   const [hover, setHover] = useState(false);
@@ -14,9 +15,9 @@ function DescriptionMe({ handleClick }) {
       className="bg-white flex flex-col gap-4 overflow-hidden rounded-[20px]  px-5 py-10 shadow-2xl backdrop-blur-lg md:px-6 md:py-8 xl:px-8 xl:py-10"
     >
       <h2 className="text-3xl font-bold text-primary-700">About Me</h2>
-      <p className="font-bold tracking-widest text-green-500">
-        <div className="mr-1 inline-block w-[35px] rounded-[50%] border-2 border-green-700 p-1 text-center ">
-          <i className="fa-solid fa-check"></i>
+      <p className="font-bold tracking-widest text-green-500 flex items-center">
+        <div className="mr-1 w-[35px] h-[35px] flex items-center justify-center rounded-[50%] border-2 border-green-700 p-1 text-center ">
+          <FaCheck />
         </div>
         <span className="text-lg tracking-[5px]">Open to work</span>
       </p>

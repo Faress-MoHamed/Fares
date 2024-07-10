@@ -29,6 +29,7 @@ function AboutMe() {
     setClick(true);
   }
   function handleClose() {
+    console.log(clicked);
     setClick(false);
   }
 
@@ -47,7 +48,7 @@ function AboutMe() {
           type: "spring",
         }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="lg:w-2/4 w-full flex flex-col gap-5"
+        className="lg:w-2/4 w-full flex flex-col gap-5 p-4"
       >
         <DescriptionMe handleClick={handleClick} />
         <SkillsBox dispatch={dispatch} />
@@ -58,7 +59,9 @@ function AboutMe() {
         {click && <BoxPobUp handleClose={handleClose} click={click} />};
       </AnimatePresence>
       <AnimatePresence>
-        {isClicked && <BobUpIcons dispatch={dispatch} clicked={isClicked} />}
+        {isClicked && (
+          <BobUpIcons dispatch={dispatch} clicked={isClicked} />
+        )}
       </AnimatePresence>
     </section>
   );

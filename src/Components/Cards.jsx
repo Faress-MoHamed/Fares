@@ -19,7 +19,7 @@ function Cards({ category, title, repo, live, img }) {
       onMouseLeave={() => hanldeRemoveHover()}
       className={`bg-white flex flex-col justify-center items-center shadow-2xl rounded-lg cursor-pointer gap-1 pb-5 overflow-hidden hover:!-translate-y-[6px] transition-all duration-300`}
     >
-      <div className="">
+      <div className="min-h-[250px]">
         <img src={img} alt={title} className="rounded-t-lg w-full " />
       </div>
       <h3

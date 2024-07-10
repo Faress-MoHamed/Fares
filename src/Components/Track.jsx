@@ -30,7 +30,7 @@ function Track() {
         duration: 0.3,
         type: "spring",
       }}
-      whileInView={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       className="bg-white py-10 shadow-2xl overflow-hidden xl:py-10 md:py-8  xl:px-8 md:px-6 px-5 rounded-[20px] backdrop-blur-lg flex flex-col gap-4"
     >
       <h2 className="text-primary-700 text-3xl font-bold">My recent track</h2>
