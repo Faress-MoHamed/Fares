@@ -82,7 +82,7 @@ function Home() {
             >
               <Link
                 className={`font-Josefin-Sans w-full sm:w-auto main-button !px-4 !py-2 text-center  !border-4  border-primary-600 text-primary-600 !rounded-lg font-medium xl:text-xl text-lg cursor-pointer hover:bg-primary-600 hover:border-transparent hover:text-sky-50 transition-all duration-300`}
-                href={"#work"}
+                to={"#work"}
                 spy={true}
                 smooth={true}
                 hashSpy={true}
@@ -96,7 +96,7 @@ function Home() {
 
               <Link
                 className="cursor-pointer button font-semibold hidden sm:block"
-                href={"#aboutme"}
+                to={"#aboutme"}
                 spy={true}
                 smooth={true}
                 hashSpy={true}

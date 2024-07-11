@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 function Cards({ category, title, repo, live, img }) {
   const [hover, setHover] = useState(false);
   function hanldeSetHover() {
@@ -30,15 +32,15 @@ function Cards({ category, title, repo, live, img }) {
       <p className="uppercase text-sm">{category}</p>
 
       <div className="self-end mx-5 w-16 h-8">
-        <ul className="flex justify-between">
+        <ul className="flex justify-between items-center">
           <li>
             <a aria-label={title} href={repo} className="">
-              <i class="fa-brands fa-github text-2xl text-neutral-700 hover:text-neutral-900 hover:scale-110 transition-all duration-300"></i>
+              <FaGithub className="text-2xl text-neutral-700 hover:text-neutral-900 hover:scale-110 transition-all duration-300" />
             </a>
           </li>
           <li>
             <a aria-label={title} href={live}>
-              <i class="fa-solid fa-globe text-2xl text-neutral-700 hover:text-neutral-900 hover:scale-110 transition-all duration-300"></i>
+              <TbWorld className="text-[1.8rem] text-neutral-700 hover:text-neutral-900 hover:scale-110 transition-all duration-300" />
             </a>
           </li>
         </ul>

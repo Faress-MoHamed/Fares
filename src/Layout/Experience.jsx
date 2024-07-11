@@ -34,7 +34,7 @@ function Experience() {
           <div>
             <div className="flex justify-center">
               <p className="text-sm w-[80%] my-5">
-                <p>
+                <span>
                   My journey as a front-end developer on Upwork has been an
                   exciting and enriching experience, marked by continuous
                   learning, collaboration, and the pursuit of excellence.
@@ -42,8 +42,8 @@ function Experience() {
                   opportunities, allowing me to showcase my skills, connect with
                   clients from around the globe, and contribute to diverse
                   projects.
-                </p>
-                <p>
+                </span>
+                <span>
                   Throughout my journey on Upwork, I had the opportunity to
                   collaborate with clients from diverse industries and
                   backgrounds. I worked closely with them to understand their
@@ -52,7 +52,7 @@ function Experience() {
                   collaborations not only honed my technical skills but also
                   strengthened my communication, problem-solving, and project
                   management abilities.
-                </p>
+                </span>
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ function Experience() {
           <div>
             <div className="flex  justify-center">
               <p className="text-md w-[80%] my-5">
-                <p>
+                <span>
                   My journey with GDSC (Google Developer Student Clubs) as a
                   front-end developer began with enthusiasm and curiosity.
                   Joining the club opened doors to a community of like-minded
@@ -94,10 +94,10 @@ function Experience() {
                   Through workshops, meetups, and networking events, I was
                   introduced to various aspects of front-end development and the
                   opportunities it offers.
-                </p>
-                <div className="hidden md:block my-5 p-3 shadow-2xl lg:w-[725px]">
+                </span>
+                <span className="hidden md:block my-5 p-3 shadow-2xl lg:w-[725px]">
                   <img src="./Me/family.jpg" alt="family" className="lg:max-w-full" />
-                </div>
+                </span>
               </p>
             </div>
           </div>

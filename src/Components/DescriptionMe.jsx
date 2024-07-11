@@ -16,9 +16,9 @@ function DescriptionMe({ handleClick }) {
     >
       <h2 className="text-3xl font-bold text-primary-700">About Me</h2>
       <p className="font-bold tracking-widest text-green-500 flex items-center">
-        <div className="mr-1 w-[35px] h-[35px] flex items-center justify-center rounded-[50%] border-2 border-green-700 p-1 text-center ">
+        <span className="mr-1 w-[35px] h-[35px] flex items-center justify-center rounded-[50%] border-2 border-green-700 p-1 text-center ">
           <FaCheck />
-        </div>
+        </span>
         <span className="text-lg tracking-[5px]">Open to work</span>
       </p>
       <p className="text-slate-500">

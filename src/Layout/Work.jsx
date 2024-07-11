@@ -67,6 +67,14 @@ const data = [
     live: "https://faress-mohamed.github.io/newsletter-sign-up-with-success-message-main/index.html",
     imgPath: "./Projects/newsletter.png",
   },
+  {
+    id: 8,
+    category: "Reactjs",
+    title: "Blood Sample",
+    repo: "https://github.com/Faress-MoHamed/Blood",
+    live: "https://blood-flame.vercel.app/",
+    imgPath: "./Projects/blood-sample.png",
+  },
 ];
 const categories = ["All", "responsive", "JavaScript", "Reactjs"];
 const Work = () => {
