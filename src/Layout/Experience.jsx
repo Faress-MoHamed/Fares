@@ -18,7 +18,7 @@ function Experience() {
         className="lg:mx-0 mx-5"
       >
         <h3 className={`text-3xl font-bold font-Josefin-Sans`}>Freelancer</h3>
-        <div className="mx-9 my-5">
+        <div className="md:mx-9 mx-0 my-5">
           <h4 className="text-lg">
             Fullstack developer{" "}
             <a
@@ -70,7 +70,7 @@ function Experience() {
         <h3 className={`text-3xl font-bold font-Josefin-Sans`}>
           GDSC coreTeam
         </h3>
-        <div className="mx-9 my-5">
+        <div className="md:mx-9 mx-0 my-5">
           <h4 className="text-lg">
             Front-End developer{" "}
             <a
@@ -96,7 +96,11 @@ function Experience() {
                   opportunities it offers.
                 </span>
                 <span className="hidden md:block my-5 p-3 shadow-2xl lg:w-[725px]">
-                  <img src="./Me/family.jpg" alt="family" className="lg:max-w-full" />
+                  <img
+                    src="./Me/family.jpg"
+                    alt="family"
+                    className="lg:max-w-full"
+                  />
                 </span>
               </p>
             </div>

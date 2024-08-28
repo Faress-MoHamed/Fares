@@ -102,10 +102,10 @@ function NavBar() {
   }
 
   function handleClose() {
-    setOpen((e) => !e);
+    setOpen(false);
   }
   function handleOpen() {
-    setOpen((e) => !e);
+    setOpen(true);
   }
 
   return (
@@ -173,54 +173,63 @@ function NavBar() {
       {
         <AnimatePresence>
           {open && (
-            <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              animate={open ? { opacity: 1, x: 0 } : {}}
-              exit={{ x: 100, opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className={`fixed ${open ? "" : "hidden"} right-0 top-0 z-[99999] w-2/5 lg:top-5`}
-            >
-              <ul className="flex  h-screen w-full flex-col items-start justify-start gap-5 bg-primary-200 p-3 backdrop-blur-lg lg:hidden">
-                <button
-                  aria-label="clos sidebar"
-                  className="text-4xl text-primary-900"
-                  onClick={() => handleClose()}
-                >
-                  <i className="fa-solid fa-xmark"></i>
-                </button>
-                {navLinksMobile.map((item) => {
-                  return (
-                    <>
-                      <motion.li
-                        initial={{ opacity: 0, x: 100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{
-                          delay: 0.2 * item.id,
-                          ease: [0.17, 0.55, 0.55, 1],
-                        }}
-                        className={`relative text-lg before:absolute before:bottom-[-5px] before:left-0 before:h-[3px] before:w-0 before:bg-slate-950 before:transition-all before:duration-300 hover:before:w-full ${activeLink === item.name ? "before:w-full" : ""}`}
-                        key={item.id}
-                      >
-                        <Link
-                          spy={true}
-                          smooth={true}
-                          hashSpy={true}
-                          offset={-20} // adjust this value based on the height of the padding or border
-                          duration={500}
-                          delay={500}
-                          isDynamic={true}
-                          to={`#${item.link}`}
-                          onClick={() => handleActiveLink(item.name)}
-                          className="cursor-pointer"
+            <>
+              <div
+                onClick={handleClose}
+                className="left-0 top-0 h-full z-[99] fixed inset-0 overflow-x-hidden bg-black bg-opacity-50"
+              ></div>
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                animate={open ? { opacity: 1, x: 0 } : {}}
+                exit={{ x: 100, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className={`fixed ${open ? "" : "hidden"} right-0 top-0 z-[99999] w-2/4 lg:top-5`}
+              >
+                <ul className="flex  h-screen w-full flex-col items-start justify-start gap-5 bg-primary-200 p-3 backdrop-blur-lg lg:hidden">
+                  <button
+                    aria-label="clos sidebar"
+                    className="text-4xl text-primary-900"
+                    onClick={() => handleClose()}
+                  >
+                    <i className="fa-solid fa-xmark"></i>
+                  </button>
+                  {navLinksMobile.map((item) => {
+                    return (
+                      <>
+                        <motion.li
+                          initial={{ opacity: 0, x: 100 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{
+                            delay: 0.2 * item.id,
+                            ease: [0.17, 0.55, 0.55, 1],
+                          }}
+                          className={`relative text-lg before:absolute before:bottom-[-5px] before:left-0 before:h-[3px] before:w-0 before:bg-slate-950 before:transition-all before:duration-300 hover:before:w-full ${activeLink === item.name ? "before:w-full" : ""}`}
+                          key={item.id}
                         >
-                          {item.name}
-                        </Link>
-                      </motion.li>
-                    </>
-                  );
-                })}
-              </ul>
-            </motion.div>
+                          <Link
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-20} // adjust this value based on the height of the padding or border
+                            duration={500}
+                            delay={500}
+                            isDynamic={true}
+                            to={`#${item.link}`}
+                            onClick={() => {
+                              handleActiveLink(item.name);
+                              handleClose();
+                            }}
+                            className="cursor-pointer"
+                          >
+                            {item.name}
+                          </Link>
+                        </motion.li>
+                      </>
+                    );
+                  })}
+                </ul>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       }

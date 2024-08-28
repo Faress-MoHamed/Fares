@@ -4,6 +4,22 @@ import Cards from "../Components/Cards";
 
 const data = [
   {
+    id: 8,
+    category: "Reactjs",
+    title: "Blood Sample",
+    repo: "https://github.com/Faress-MoHamed/Blood",
+    live: "https://blood-flame.vercel.app/",
+    imgPath: "./Projects/blood-sample.png",
+  },
+  {
+    id: 9,
+    category: "Reactjs",
+    title: "Pl girls",
+    repo: "https://github.com/Faress-MoHamed/PL.Girles",
+    live: "https://pl-girles.vercel.app/",
+    imgPath: "./Projects/plgirls.png",
+  },
+  {
     id: 1,
     category: "Reactjs",
     title: "React Quiz",
@@ -67,14 +83,6 @@ const data = [
     live: "https://faress-mohamed.github.io/newsletter-sign-up-with-success-message-main/index.html",
     imgPath: "./Projects/newsletter.png",
   },
-  {
-    id: 8,
-    category: "Reactjs",
-    title: "Blood Sample",
-    repo: "https://github.com/Faress-MoHamed/Blood",
-    live: "https://blood-flame.vercel.app/",
-    imgPath: "./Projects/blood-sample.png",
-  },
 ];
 const categories = ["All", "responsive", "JavaScript", "Reactjs"];
 const Work = () => {
@@ -94,14 +102,14 @@ const Work = () => {
   return (
     <section
       id="#work"
-      className="container mx-auto px-3 max-w-7xl py-36 overflow-hidden"
+      className="container mx-auto px-3 max-w-7xl md:py-36 py-4 overflow-hidden"
     >
       <Header>Examples of My Work</Header>
       <div className="flex justify-center w-full items-center">
         <div
-          className={`h-12 flex md:w-2/4 justify-center pl-2 rounded-full mb-10`}
+          className={`h-12 flex md:w-2/4 w-full justify-center pl-2 md:rounded-full rounded-[5px] mb-10`}
         >
-          <ul className="bg-white py-7 px-4 w-full flex md:gap-0 gap-4 rounded-full justify-between items-center">
+          <ul className="bg-white md:py-7 py-1 px-4 w-full flex md:gap-0 gap-4 md:rounded-full rounded-[5px] justify-between items-center overflow-x-scroll">
             {categories.map((el, index) => (
               <li
                 aria-label="select category"
@@ -110,7 +118,7 @@ const Work = () => {
                   handleCategoryChange(el);
                 }}
                 className={`min-w-[100px] text-center capitalize font-semibold hover:bg-slate-200 
-              hover:text-primary-700 p-2 w-[${100 / categories.length}%] rounded-full transition-colors duration-300 ${selectedCategory === el ? "text-primary-700 bg-slate-200" : "text-neutral-800"}`}
+              hover:text-primary-700 p-2 w-[${100 / categories.length}%] text-sm md:rounded-full rounded-[5px] transition-colors duration-300 ${selectedCategory === el ? "text-primary-700 bg-slate-200" : "text-neutral-800"}`}
                 key={index}
               >
                 {el}

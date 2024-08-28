@@ -38,9 +38,9 @@ function BoxPobUp({ handleClose, click }) {
             My Story
           </h2>
         </div>
-        <div className="overflow-y-auto h-[500px]">
+        <div className="overflow-y-auto md:h-[500px]">
           <div className="pr-2">
-            <p className="text-lg">
+            <p className="md:text-lg text-sm">
               Ever since I stumbled upon my first website as a child, I was
               fascinated by the magic of how beautiful designs and interactive
               elements came to life on screen. It wasn't just about how things
