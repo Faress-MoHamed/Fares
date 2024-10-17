@@ -53,5 +53,5 @@ export {
   Vite,
   VueJs,
   Wordpress,
-  dots
+  dots,
 };

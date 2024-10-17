@@ -3,9 +3,11 @@ import {
   Bootstrap,
   Expressjs,
   Javascript,
+  NextJs,
   NodeJs,
   Reactjs,
   Redux,
+  Sass,
   TailwindCSS,
   dots,
 } from "../../public/skills/export";
@@ -31,6 +33,8 @@ function Icons({ dispatch }) {
     { name: "Reactjs", image: Reactjs },
     { name: "Redux", image: Redux },
     { name: "TailwindCSS", image: TailwindCSS },
+    { name: "Nextjs", image: NextJs },
+    { name: "Sass", image: Sass },
   ];
 
   return (
@@ -69,4 +73,3 @@ function Icons({ dispatch }) {
   );
 }
 export default Icons;
-

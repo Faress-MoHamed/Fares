@@ -109,7 +109,7 @@ const Work = () => {
         <div
           className={`h-12 flex md:w-2/4 w-full justify-center pl-2 md:rounded-full rounded-[5px] mb-10`}
         >
-          <ul className="bg-white md:py-7 py-1 px-4 w-full flex md:gap-0 gap-4 md:rounded-full rounded-[5px] justify-between items-center overflow-x-scroll">
+          <ul className="bg-white px-2 w-full flex md:gap-0 gap-4 md:rounded-full rounded-[5px] justify-between items-center overflow-x-scroll md:min-w-[450px] min-w-[80%]">
             {categories.map((el, index) => (
               <li
                 aria-label="select category"
